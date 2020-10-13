@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethanol | Post A Job</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/nav.css">
+   
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+   
+    <link rel="stylesheet" href="assets/assets_nav/css/style.css">
+
+    <style type="text/css">
+         
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 80px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .cd-3d-nav__item:hover .dropdown-content {display: block;}
+        .cd-3d-nav__item--selected:hover .dropdown-content {display: block;}
+    </style>
+<link rel="stylesheet" href="post_a_job.css">
+<style>
+     .btn-default{
+      
+      background-color: none;
+      border: 2px solid #00aeef;
+  }
+  .btn-default:hover{
+      background-color: #00aeef;
+      color: white;
+      border: none;
+  }
+  .btn-search{
+      background-color: rgba(87, 128, 117, 0.2);
+  }
+  .job-box{
+      border:1px solid black;
+  }
+</style>
+</head>
+    
+<body>
+    <header class="cd-header  flex justify-between items-center">
+        <a href="index.html" class="cd-logo">
+          <img src="assets/img/logo.png" width="200" height="70">
+        </a>
+        
+        <a href="#cd-3d-nav" class="cd-header__nav-trigger" aria-label="Toggle menu">
+          <span aria-hidden="true"></span>
+        </a>
+    </header>
+
+    <div class="banner"
+        style="background-image:url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');">
+        <div class="left-gradient">
+            
+        </div>
+        <div class="banner-overlay">
+                <div class="bo-container" style="text-align: center;">
+                    <h2 class="banner-title">Grow your career with us </h2>
+                    <span class="banner-text">
+                        <p>The latest jobs for you.So, you can easily apply for the same</p>
+                    </span>
+                </div>
+        </div>
+   </div>
+
+   
+<div class="container-fluid"style="background-color: #EAE1D6;" >
+  
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="career-search mb-60">
+
+                <form action="#" class="career-form mb-60" style="margin-top: 8px;">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="input-group position-relative">
+                                <input type="text" class="form-control" placeholder="Enter Your Keywords" id="keywords">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="select-container">
+                                <select class="custom-select">
+                                    <option selected=""><i class="fa fa-map-marker"></i> Location</option>
+                                    <option value="1">Delhi</option>
+                                    <option value="2">UttarPradesh</option>
+                                    <option value="3">Bangalore</option>
+                                    <option value="4">MadhyaPradesh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <div class="select-container">
+                                <select class="custom-select">
+                                    <option selected="">Select Job Type</option>
+                                    <option value="1">Medical Officer For leading liquor plant</option>
+                                    <option value="2">Sales Executive Liquor</option>
+                                    <option value="3">Sales Head - Liquor - Uttar Pradesh</option>
+                                    <option value="4">DGM Finance & Accounts :: Sugar/Distillery- UP</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 my-3">
+                            <button type="button" class="btn btn-lg btn-block btn-light btn-search" id="contact-submit">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="filter-result">
+                    <p class="mb-30 ff-montserrat">Total Job Openings : 10</p>
+
+                    <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                        <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
+                            <img src="resource/assets/images/about2.jpg" class="square-circle img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" height="60px" width="60px" alt="">
+                            <div class="job-content">
+                                <h5 class="text-center text-md-left">Medical Officer For Leading Liquor Plant</h5>
+                                <ul class=" flex-wrap text-capitalize ff-open-sans">
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-map-marker mr-2"></i> Banglore
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-inr mr-2"></i> 25000-35000/pm
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-clock-o mr-2"></i> Full Time
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job-right my-4 flex-shrink-0">
+                            <a href="#" class="btn d-block w-100 d-sm-inline-block btn-default">Apply now</a>
+                        </div>
+                    </div>
+
+                    <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                        <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
+                            <img src="resource/assets/images/about3.jpg" class="square-circle img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" height="60px" width="60px" alt="">
+                            <div class="job-content">
+                                <h5 class="text-center text-md-left">Sales Executive Liquor</h5>
+                                <ul class=" flex-wrap text-capitalize ff-open-sans">
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-map-marker mr-2"></i> Delhi
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-inr mr-2"></i> 15000-2000/pm
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-clock-o mr-2"></i> Full Time
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job-right my-4 flex-shrink-0">
+                            <a href="#" class="btn d-block w-100 d-sm-inline-block btn-default">Apply now</a>
+                        </div>
+                    </div>
+
+                    <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                        <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
+                            <img src="resource/assets/images/about4.jpg" class="square-circle img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" height="60px" width="60px" alt="">
+                            <div class="job-content">
+                                <h5 class="text-center text-md-left">Sales Head - Liquor</h5>
+                                <ul class=" flex-wrap text-capitalize ff-open-sans">
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-map-marker mr-2"></i> Noida
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-inr mr-2"></i> 10000-12000/pm
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class=" fa fa-clock-o mr-2"></i> Full Time
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job-right my-4 flex-shrink-0">
+                            <a href="#" class="btn d-block w-100 d-sm-inline-block btn-default">Apply now</a>
+                        </div>
+                    </div>
+
+                    <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                        <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
+                            <img src="resource/assets/images/about1.jpg" class="square-circle img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" height="60px" width="60px" alt="">
+                            <div class="job-content">
+                                <h5 class="text-center text-md-left">Purchase Executive - Brewery Industry</h5>
+                                <ul class=" flex-wrap text-capitalize ff-open-sans">
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-map-marker mr-2"></i> Delhi
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-inr mr-2"></i> 13000-18000/pm
+                                    </li>
+                                    <li class="mr-md-4">
+                                        <i class="fa fa-clock-o mr-2"></i> Full Time
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job-right my-4 flex-shrink-0">
+                            <a href="#" class="btn d-block w-100 d-sm-inline-block btn-default">Apply now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- START Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-reset justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item d-none d-md-inline-block"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item d-none d-md-inline-block"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END Pagination -->
+        </div>
+    </div>
+
+</div>
+
+<!-- form code starts  -->
+<section class="testimonial py-5" id="testimonial" style="background-color: #CECECE !important; margin-top: 20px;
+" >
+  <div class="container" >
+      <div class="row ">
+          <div class="col-md-4 py-5 text-white text-center ">
+              <marquee behavior="alternate" direction=""  style="color:orangered;"> Post A Job Here </marquee>
+             <img src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" style="height: 600px; width: 430px;" alt="">
+          </div>
+          <div class="col-md-8 py-5" style="border: 1px solid black;">
+              <h4 class="pb-4 ml-2">Please fill  your details regarding the job</h4>
+              <form>
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input id="company_name" name="company_name" placeholder="Company Name" class="form-control" type="text">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <select class="custom-select">
+                            <option selected="">Select Post Name</option>
+                            <option value="1">Medical Officer For leading liquor plant</option>
+                            <option value="2">Sales Executive Liquor</option>
+                            <option value="3">Sales Head - Liquor - Uttar Pradesh</option>
+                            <option value="4">DGM Finance & Accounts :: Sugar/Distillery- UP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="experience" name="experience" placeholder="Experience" class="form-control" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="salary" placeholder="Salary">
+                        </div>
+                      </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <input id="Mobile No." name="Experience." placeholder="Mobile No." class="form-control" required="required" type="text">
+                      </div>
+                      <div class="form-group col-md-6">
+                                
+                                <select id="inputState" class="form-control custom-select" >
+                                  <option selected="">Location</option>
+                                  <option>Noida</option>
+                                  <option>Delhi</option>
+                                  <option> Haryana</option>
+                                  <option> others</option>
+                                </select>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <textarea id="skill" name="skill" cols="40" rows="3" class="form-control" placeholder="Skills "></textarea>
+              </div>
+                      <div class="form-group col-md-12">
+                                <textarea id="comment" name="comment" cols="40" rows="4" class="form-control" placeholder="Job Description"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group">
+                          <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                  <small>By clicking Submit, you agree to our Terms & Conditions, Visitor Agreement and Privacy Policy.</small>
+                                </label>
+                              </div>
+                            </div>
+                  
+                        </div>
+                  </div>
+                  
+                  <div class="form-row">
+                      <button type="button" class="btn btn-default">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- ends heres -->
+    <footer class="site-footer">
+        <div class="site-footer-container">
+            <div id="footerContent">
+                <div id="footerleftcol">
+                    <div class="fcol" id="fc1">
+                        <h5>Address</h5>
+                        <ul class="address">
+                            
+                            <li>Sector-2</li>
+                            <li>Noida</li>
+                            <li>Uttarpradesh</li>
+                            <li>201301</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="fcol" id="fc2">
+                        <h5>Ethanol</h5>
+                        <nav class="footer-menu">
+                            <div class="menu-footer-menu-container">
+                                <ul id="menu-footer-menu" class="menu">
+                                    <li id="menu-item-866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866">
+                                        <a href="about.html">About us</a>
+                                    </li>
+                                  
+                                    <li id="menu-item-1646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1646">
+                                        <a href="training.html">Training courses</a>
+                                    </li>
+                                    <li id="menu-item-2132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2132">
+                                        <a href="blog.html">Ethanol blog</a>
+                                    </li>
+                                    <li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869">
+                                        <a href="contact.html">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="footerrightcol">
+                    <div class="fcol" id="fc3">
+                        <h5>From our blog</h5>
+                        <ul class="footer-posts">
+                            <li>      
+                            <a href="blog1.html">History of Beer</a>
+                            </li>
+                            <li>      
+                            <a href="blog2.html">Beer:A science of flavours</a>
+                            </li>
+                            <li>      
+                            <a href="blog3.html">Importance of wort boiling in brewing</a>
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="fcol" id="fc4">
+                        <h5>Get in touch</h5>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            &nbsp; info@ethanol.com
+                        </a>
+                        <a href="tel:9991088297">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            &nbsp; +91 9991088297
+                        </a>
+                        <ul class="social-links">
+                            <li><a href="#" target="_blank">
+                                <i class="fa fa-twitter"></i>&nbsp;
+                                <span class="sm-text"></span></a>
+                            </li>
+                            <li><a href="#" target="_blank">
+                                <i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank">
+                                <i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#" target="_blank">
+                                <i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#" target="_blank">
+                                <i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-footer-container">
+                <div class="bf-container">
+                    <span class="copyright">&copy; 2020&nbsp;Ethanol. All rights reserved<br><br>
+                        <a href="#">Terms, Conditions &amp; Refunds</a>
+                        <span class="spacer">|</span>
+                        <a href="#">Privacy Policy</a>
+                        <span class="spacer">|</span>
+                        <a href="#" target="_blank" rel="noopener">Designed by AStuteLook Techonologies
+                            pvt.Ltd
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="cd-3d-nav js-cd-3d-nav" id="cd-3d-nav">
+        <ul class="cd-3d-nav__list">
+            <li class="cd-3d-nav__item ">
+                <a href="index.html">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="cd-3d-nav__item">
+                <a href="about.html">
+                    <i class="fa fa-university"></i>
+                    <span>About US</span>
+                </a>
+            </li>
+            <li class="cd-3d-nav__item">
+                <a href="training.html">
+                    <i class="fa fa-cogs"></i>
+                    <span>Training Courses</span>
+                </a>
+                
+                  
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                
+            </li>
+            <!-- <li class="cd-3d-nav__item">
+                <a href="#0">
+                    <i class="fa fa-suitcase"></i>
+                    <span>Post a Job</span>
+                </a>
+            </li> -->
+
+            <li class="cd-3d-nav__item ">
+                <a href="blog.html">
+                    <i class="fa fa-rss"></i>
+                    <span>Blog</span>
+                 </a>
+            </li>
+
+            <li class="cd-3d-nav__item cd-3d-nav__item--selected">
+                <a href="contact.html">
+                  <i class="fa fa-phone"></i>
+                  <span>Contact Us</span>
+                </a>
+            </li>
+
+            <li class="cd-3d-nav__item">
+                <a href="login.html">
+                  <i class="fa fa-sign-in"></i>
+                  <span>Log In / Sign Up</span>
+                </a>
+            </li>
+        </ul>
+
+        <span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span> 
+    </nav>
+    <script src="assets/assets_nav/js/util.js"></script> 
+    <script src="assets/assets_nav/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</body>
+
+
+</html>
